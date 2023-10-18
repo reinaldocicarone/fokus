@@ -41,15 +41,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Unbounded', cursive;
 }
 
-.app {
-    display: flex;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 90vh;
-}
-
 .app__logo-figure {
     display: flex;
     justify-content: center;
@@ -174,8 +165,6 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
     background: #010B15;
-    position: absolute;
-    bottom: 0;
 }
 
 .app__footer-text {
@@ -242,15 +231,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Para Tablets */
 @media (max-width: 1024px) and (min-width: 768px) {
-    .app {
-        display: block;
-        height: auto;
-    }
-
-    .app__footer {
-        position: relative;
-    }
-
     .app__section-banner-container {
         width: 48rem;
     }
@@ -258,15 +238,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Para Celulares */
 @media (max-width: 767px) {
-    .app {
-        display: block;
-        height: auto;
-    }
-
-    .app__footer {
-        position: relative;
-    }
-
     .app__section-banner-container {
         width: 32rem;
     }
