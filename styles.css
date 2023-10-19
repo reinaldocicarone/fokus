@@ -37,7 +37,12 @@ body {
     background-repeat: no-repeat;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Unbounded', cursive;
 }
 
@@ -165,6 +170,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
     background: #010B15;
+    margin-top: 5rem;
 }
 
 .app__footer-text {
@@ -175,6 +181,83 @@ h1, h2, h3, h4, h5, h6 {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+}
+
+.app__section-task-container {
+    display: flex;
+    justify-content: center;
+}
+
+.app__task {
+    width: 59rem;
+    max-width: 90%;
+}
+
+.current_task {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: Montserrat;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #144480;
+    margin-bottom: 3rem;
+}
+
+.current_task label {
+    width: 180px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.current_task p {
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.list_task_container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.text_list_task {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.text_list_task h3 {
+    font-size: 3rem;
+}
+
+.more_option {
+    cursor: pointer;
+}
+
+.add_task {
+    display: flex;
+    background: none;
+    border: 2px solid #B872FF;
+    color: #B872FF;
+    width: 588px;
+    height: 64px;
+    border-radius: 32px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+    cursor: pointer;
+}
+
+.add_task  span{
+    font-size: 2rem;
+    width: 200px;
+}
+
+.card_add_task {
+    
 }
 
 /* toggle */
@@ -194,7 +277,8 @@ h1, h2, h3, h4, h5, h6 {
     transition: background 0.25s;
 }
 
-.toggle-switch:before, .toggle-switch:after {
+.toggle-switch:before,
+.toggle-switch:after {
     content: "";
 }
 
@@ -214,11 +298,11 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(to bottom, #fff 0%, #fff 100%);
 }
 
-.toggle-checkbox:checked + .toggle-switch {
+.toggle-checkbox:checked+.toggle-switch {
     background: var(--lils);
 }
 
-.toggle-checkbox:checked + .toggle-switch:before {
+.toggle-checkbox:checked+.toggle-switch:before {
     left: 3rem;
 }
 
