@@ -42,7 +42,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+label {
     font-family: 'Unbounded', cursive;
 }
 
@@ -205,7 +206,7 @@ h6 {
 
 .current_task label {
     width: 180px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 400;
 }
 
@@ -226,6 +227,7 @@ h6 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 16px;
 }
 
 .text_list_task h3 {
@@ -257,7 +259,124 @@ h6 {
 }
 
 .card_add_task {
-    
+    display: none;
+    flex-direction: column;
+    width: 588px;
+    border-radius: 8px;
+    padding: 16px;
+    gap: 16px;
+    background: rgba(255, 255, 255, 0.5);
+    color: rgba(1, 8, 14, 1);
+}
+
+.title_card {
+    font-size: 2.5rem;
+}
+
+.text_task {
+    width: 100%;
+    border-radius: 8px;
+    padding: 16px;
+    background: rgba(152, 160, 168, 1);
+    border: none;
+    text-align: start;
+    justify-content: flex-start;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+.button_options {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.delete_button, .cancel_button {
+    border: none;
+    background: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.delete_button img, .cancel_button img, .save_button img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0.5rem;
+}
+
+.button_cancel_save {
+    display: flex;
+    width: 250px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.delete_button:not(.visible) {
+    visibility: hidden;
+}
+
+.save_button {
+    border: none;
+    border-radius: 32px;
+    padding: 8px 16px;
+    background: black;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.task {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(152, 160, 168, 1);
+    border-radius: 8px;
+    height: 64px;
+    padding: 0 16px;
+    cursor: pointer;
+}
+
+.end_task {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    border: none;
+    cursor: pointer;
+}
+
+.edit_task {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    border: 1px solid #01080E;
+    background: none;
+    cursor: pointer;
+}
+
+.label_task {
+    font-size: 1.5rem;
+    width: 75%;
+    padding: 0 16px;
+    color: #01080E;
+    cursor: pointer;
+}
+
+.label_timer {
+    font-size: 1.5rem;
+    width: 25%;
+    padding: 0 16px;
+    color: #01080E;
+    cursor: pointer;
 }
 
 /* toggle */
@@ -309,6 +428,10 @@ h6 {
 .toggle-checkbox {
     position: absolute;
     visibility: hidden;
+}
+
+.visible {
+    display: flex;
 }
 
 /* fim - toggle */

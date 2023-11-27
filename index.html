@@ -76,36 +76,42 @@
             <div class="app__task">
                 <div class="current_task">
                     <label>#Em andamento:</label>
-                    <p>-</p>
+                    <p class="current_task_name">-</p>
                 </div>
                 <div class="list_task_container">
                     <div class="text_list_task">
                         <h3>Lista de tarefas:</h3>
                         <img class="more_option" src="/imagens/more_vert.svg" />
                     </div>
-                    <ul id="list_task"></ul>
+                    <ul id="list_task">
+                    </ul>
                     <div class="card_add_task">
                         <form>
-                            <h3>Adicionando tarefa</h3>
-                            <input type="text" placeholder="No que você está trabalhando?" />
-                            <button class="delete_button">
-                                <img src="/imagens/delete.svg">
-                                <span>Deletar</span>
-                            </button>
-                            <div>
-                                <button class="cancel_button">
-                                    <img src="/imagens/close.svg">
-                                    <span>Cancelar</span>
+                            <h3 class="title_card">Adicionando tarefa</h3>
+                            <textarea type="textArea" class="text_task" rows="3" maxlength="100"
+                                placeholder="No que você está trabalhando?">
+                                No que você está trabalhando?
+                            </textarea>
+                            <div class="button_options">
+                                <button class="delete_button">
+                                    <img src="/imagens/delete.svg">
+                                    <span>Deletar</span>
                                 </button>
-                                <button class="save_button">
-                                    <img src="/imagens/save.png">
-                                    <span>Salvar</span>
-                                </button>
+                                <div class="button_cancel_save">
+                                    <button class="cancel_button">
+                                        <img src="/imagens/close.svg">
+                                        <span>Cancelar</span>
+                                    </button>
+                                    <button class="save_button">
+                                        <img src="/imagens/save.png">
+                                        <span>Salvar</span>
+                                    </button>
+                                </div>
                             </div>
                         </form>
                     </div>
                 </div>
-                <button class="add_task">
+                <button class="add_task" id="botao_adicionar_tarefa">
                     <img src="/imagens/Add_lilás.png" />
                     <span>Adicionar nova tarefa</span>
                 </button>
