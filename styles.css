@@ -205,7 +205,7 @@ label {
 }
 
 .current_task label {
-    width: 180px;
+    width: 18rem;
     font-size: 1.3rem;
     font-weight: 400;
 }
@@ -227,7 +227,7 @@ label {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 16px;
+    padding: 1.6rem;
 }
 
 .text_list_task h3 {
@@ -243,9 +243,9 @@ label {
     background: none;
     border: 2px solid #B872FF;
     color: #B872FF;
-    width: 588px;
-    height: 64px;
-    border-radius: 32px;
+    width: 58.8rem;
+    height: 6.4rem;
+    border-radius: 3.2rem;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -255,16 +255,17 @@ label {
 
 .add_task  span{
     font-size: 2rem;
-    width: 200px;
+    width: 20rem;
 }
 
 .card_add_task {
+    margin: 32px 0 0;
     display: none;
     flex-direction: column;
-    width: 588px;
-    border-radius: 8px;
-    padding: 16px;
-    gap: 16px;
+    width: 58.8rem;
+    border-radius: .8rem;
+    padding: 1.6rem;
+    gap: 1.6rem;
     background: rgba(255, 255, 255, 0.5);
     color: rgba(1, 8, 14, 1);
 }
@@ -275,14 +276,18 @@ label {
 
 .text_task {
     width: 100%;
-    border-radius: 8px;
-    padding: 16px;
+    border-radius: .8rem;
+    padding: 1.6rem;
     background: rgba(152, 160, 168, 1);
     border: none;
     text-align: start;
     justify-content: flex-start;
     margin: 2rem 0;
     font-size: 2rem;
+}
+
+.index_task {
+    visibility: hidden;
 }
 
 .button_options {
@@ -311,7 +316,7 @@ label {
 
 .button_cancel_save {
     display: flex;
-    width: 250px;
+    width: 25rem;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -322,8 +327,8 @@ label {
 
 .save_button {
     border: none;
-    border-radius: 32px;
-    padding: 8px 16px;
+    border-radius: 3.2rem;
+    padding: 8px 1.6rem;
     background: black;
     color: white;
     font-size: 1.8rem;
@@ -340,43 +345,50 @@ label {
     justify-content: space-between;
     align-items: center;
     background: rgba(152, 160, 168, 1);
-    border-radius: 8px;
-    height: 64px;
-    padding: 0 16px;
+    border-radius: .8rem;
+    height: 6.4rem;
+    padding: 0 1.6rem;
     cursor: pointer;
+    margin: 1rem 0;
 }
 
 .end_task {
-    width: 32px;
-    height: 32px;
-    border-radius: 32px;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 3.2rem;
     border: none;
     cursor: pointer;
 }
 
 .edit_task {
-    width: 32px;
-    height: 32px;
-    border-radius: 32px;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 3.2rem;
     border: 1px solid #01080E;
     background: none;
     cursor: pointer;
 }
 
 .label_task {
+    display: flex;
+    align-items: center;
     font-size: 1.5rem;
-    width: 75%;
-    padding: 0 16px;
+    width: 70%;
+    padding: 0 1.6rem;
     color: #01080E;
     cursor: pointer;
+    height: 5rem;
 }
 
 .label_timer {
+    display: flex;
+    align-items: center;
     font-size: 1.5rem;
     width: 25%;
-    padding: 0 16px;
+    padding: 0 1.6rem;
     color: #01080E;
     cursor: pointer;
+    height: 5rem;
 }
 
 /* toggle */
