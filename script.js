@@ -213,6 +213,8 @@ salvarTarefa.addEventListener('click', (e) => {
         listaTarefas.push({id: ultimoId, nome: tarefa, tempo: '0'})
         createCard(listaTarefas.at(-1), listaTarefas.length-1)
     }
+
+    console.log('apagar')
     cardAdicionarTarefa.classList.remove('visible')
     deletarTarefa.classList.remove('visible')
 
@@ -237,7 +239,7 @@ function editarCard(index) {
     const cardTempo = document.querySelector(`#card-${index} .label_timer`)
     const tarefa = buscarTarefaId(index)
     cardNome.innerHTML = tarefa.nome
-    cardTempo.innerHTML = mostrarTempo(tarefa.tempo)
+    // cardTempo.innerHTML = mostrarTempo(tarefa.tempo)
 }
 
 function createCard(tarefa) {
