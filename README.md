@@ -1,4 +1,4 @@
-# fokus
+<h1 align="center"> Projeto Fokus </h1>
 Aplicativo que ira te auxiliar no foco e produtividade
 
 
